@@ -27,7 +27,9 @@ input, textarea, select {
   padding: 0.25rem;
   color: rgb(61, 58, 105);
 }
-
+textarea {
+    resize: none;
+}
 h1 {
     text-align: center;
     color: white;
