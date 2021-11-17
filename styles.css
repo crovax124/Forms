@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(39, 37, 37);
+  background-color: rgb(218, 245, 255);
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
@@ -10,6 +10,7 @@ form {
   background-color: white;
   padding: 1rem;
   border-radius: 6px;
+  box-shadow: 2px 2px 5px black ;
 }
 
 label {
