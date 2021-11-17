@@ -14,7 +14,7 @@
   </head>
   <body>
     <header><h1>Contact Us</h1></header>
-    <form action="/" method="GET">
+    <form action="/challenge" method="GET">
       <section>
         <h2>How can we help you?</h2>
         <ul>
@@ -30,12 +30,12 @@
           </li>
           <li>
             <label for="useremail">Your email address</label>
-            <input type="email" name="user-email" id="useremail" />
+            <input type="email" name="user-email" id="useremail" required />
           </li>
           <li>
             <label for="userphone">Your phone Number</label>
             <input
-              type="number"
+              type="tel"
               name="user-phone"
               id="userphone"
               required
@@ -48,18 +48,17 @@
               name="usermessage"
               id="usermessage"
               cols="30"
-              rows="3"
+              rows="6"
+              required
             ></textarea>
           </li>
-          <li>
-            <label for="select-element">How did you find us?</label>
-            <select name="selectelement" id="select-element" required>
-              <option value="search">Web Search</option>
-              <option value="friend">Recommended by a friend</option>
-              <option value="ad">Advertisement</option>
-            </select>
-          </li>
         </ul>
+        <section> <label for="select-element">How did you find us?</label>
+          <select name="selectelement" id="select-element" required>
+            <option value="search">Web Search</option>
+            <option value="friend">Recommended by a friend</option>
+            <option value="ad">Advertisement</option></section>
+          </select>
       </section>
 
       <section id="reply">
@@ -95,7 +94,6 @@
             />
             <label for="verify-email">Via an email</label>
           </li>
-
           <li class="form-control-inline">
             <input type="radio" name="verify" id="verify-dont" />
             <label for="verify-reply">Don't reply</label>
